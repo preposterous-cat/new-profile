@@ -11,7 +11,7 @@ export default function Home() {
         backgroundSize: "cover",
       }}
     >
-      <Button>Click Me</Button>
+      <Button>Home Page</Button>
     </main>
   );
 }

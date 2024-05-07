@@ -13,17 +13,17 @@ const menu_data = [
   },
   {
     name: "About",
-    link: "/",
+    link: "/about",
     icon: <FaPersonCircleQuestion />,
   },
   {
     name: "Contact",
-    link: "/",
+    link: "/contact",
     icon: <FaMessage />,
   },
   {
     name: "Portfolio",
-    link: "/",
+    link: "/portfolio",
     icon: <FaBook />,
   },
 ];
