@@ -3,14 +3,24 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../../ui/button";
 import menu_data from "@/data/menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const BottomBar = () => {
   const [pageIndex, setPageIndex] = useState(0);
 
+  const navigateHandler = (i) => {
+    setPageIndex(i);
+  };
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    const pathIndex = menu_data.findIndex((item) => item.link == path);
+    setPageIndex(pathIndex);
+  }, []); // Menjalankan efek ini sekali saat komponen dimuat
+
   return (
-    <nav className="absolute bottom-0 left-0 mb-5 flex w-screen overflow-x-auto">
+    <nav className="fixed bottom-0 left-0 mb-5 flex w-screen overflow-x-auto">
       {/* <Button variant="outline" size="icon">
         <ChevronLeft className="h-4 w-4" />
       </Button> */}
@@ -38,7 +48,7 @@ const BottomBar = () => {
                         backgroundImage: `linear-gradient(to bottom, var(--thememaroon-muted), var(--thememaroon-muted))`,
                       }
                 }
-                onClick={() => setPageIndex(i)}
+                onClick={() => navigateHandler(i)}
               >
                 {item.icon}
               </Button>

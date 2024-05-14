@@ -18,6 +18,11 @@ export default function RootLayout({ children }) {
           "min-h-screen bg-background antialiased",
           inter.className
         )}
+        style={{
+          backgroundImage: `url(/img/bg.svg)`,
+          backgroundSize: "contain",
+          backgroundAttachment: "fixed",
+        }}
       >
         {children}
         <BottomBar />

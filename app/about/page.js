@@ -1,11 +1,8 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import AboutComponent from "@/components/main/about";
 
 const AboutPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button>About Page</Button>
-    </div>
-  );
+  return <AboutComponent />;
 };
 
 export default AboutPage;

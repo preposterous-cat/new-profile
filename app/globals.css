@@ -34,9 +34,9 @@
 
       --radius: 0.5rem;
 
-      --themeblue: rgb(71, 147, 175);
+      --themeblue: rgb(0, 18, 32);
       --themeorange: rgb(255, 196, 112);
-      --thememaroon: rgb(139, 50, 44);
+      --thememaroon: rgb(167, 35, 58);
       --thememaroon-muted: rgb(163, 114, 111);
       --themered: rgb(221, 87, 70);
     }
@@ -80,6 +80,27 @@
       @apply bg-background text-foreground;
     }
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--themeblue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--thememaroon);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--thememaroon);
+}
 
   .stepper-wrapper {
     margin-top: auto;

@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "About Page",
-  description: "About Page",
+  title: "Contact Page",
+  description: "Contact Page",
 };
 
-const AboutLayout = ({ children }) => {
+const contactLayout = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between px-24 py-14">
       {children}
@@ -11,4 +11,4 @@ const AboutLayout = ({ children }) => {
   );
 };
 
-export default AboutLayout;
+export default contactLayout;
