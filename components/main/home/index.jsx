@@ -37,10 +37,7 @@ const HomeComponent = () => {
             </p>
 
             <div className="flex flex-row gap-4 mt-10 lg:justify-start justify-center">
-              <Button
-                className="outline border-none hover:bg-thememaroon outline-thememaroon bg-transparent text-white"
-                variant="outline"
-              >
+              <Button className=" border-2 border-thememaroon hover:bg-thememaroon bg-themeblue text-white">
                 <Link href="/contact">Get in Touch</Link>
               </Button>
             </div>
