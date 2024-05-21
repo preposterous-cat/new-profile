@@ -23,6 +23,8 @@ import skills from "@/data/skills";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import PortfolioDetail from "./detail";
+import portfolios from "@/data/portfolio";
+import Image from "next/image";
 
 const PortfolioComponent = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
@@ -120,36 +122,45 @@ const PortfolioComponent = () => {
         <TabsContent value="project">
           <Card className="border-s-2 border-b-2 border-t-0 border-e-0 border-thememaroon bg-themeblue">
             <CardContent className=" grid lg:grid-cols-4 grid-cols-1 p-6 gap-4 lg:max-h-[450px] max-h-[700px] overflow-auto">
-              {Array.from({ length: 6 }).map((item, i) => (
-                <div
-                  key={i}
-                  className="card card-compact bg-base-100 shadow-xl h-full"
-                >
-                  <figure>
-                    <img
-                      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body bg-thememaroon rounded-b-xl">
-                    <h2 className="card-title text-white font-normal">
-                      Shoes!
-                    </h2>
+              {portfolios?.map((item, i) => (
+                <>
+                  <div
+                    key={i}
+                    className="card card-compact bg-base-100 shadow-xl h-full"
+                  >
+                    <figure>
+                      <Image
+                        src={`/img/thumbnail/${item.thumbnail}`}
+                        alt="thumbnail"
+                        width={300}
+                        height={300}
+                      />
+                    </figure>
+                    <div className="card-body bg-thememaroon rounded-b-xl">
+                      <h2 className="card-title text-white font-normal">
+                        {item.title}
+                      </h2>
 
-                    <div className="card-actions justify-end">
-                      <button
-                        className="btn btn-primary bg-white hover:bg-themered border-none"
-                        onClick={() =>
-                          document.getElementById(`modal${i}`).showModal()
-                        }
-                      >
-                        More
-                      </button>
+                      <div className="card-actions justify-end">
+                        <button
+                          className="btn btn-primary bg-white hover:bg-themered border-none"
+                          onClick={() =>
+                            document.getElementById(`modal${i}`).showModal()
+                          }
+                        >
+                          More
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                  <PortfolioDetail
+                    index={i}
+                    link={item.detail.link}
+                    preview={item.detail.preview}
+                    desc={item.detail.desc}
+                  />
+                </>
               ))}
-              <PortfolioDetail />
             </CardContent>
           </Card>
         </TabsContent>
