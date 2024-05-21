@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         )}
         style={{
           backgroundImage: `url(/img/bg.svg)`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
       >

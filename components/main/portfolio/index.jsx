@@ -22,6 +22,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import skills from "@/data/skills";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
+import PortfolioDetail from "./detail";
 
 const PortfolioComponent = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
@@ -50,7 +51,7 @@ const PortfolioComponent = () => {
         </TabsList>
 
         <TabsContent value="skills" className="w-full">
-          <Card className="bg-themeblue ring-e- border-thememaroon">
+          <Card className="bg-themeblue border-s-2 border-b-0 border-t-0 border-e-0 border-thememaroon">
             <CardContent className="space-y-2">
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div
@@ -117,7 +118,7 @@ const PortfolioComponent = () => {
         </TabsContent>
 
         <TabsContent value="project">
-          <Card className="border border-thememaroon bg-themeblue">
+          <Card className="border-s-2 border-b-2 border-t-0 border-e-0 border-thememaroon bg-themeblue">
             <CardContent className=" grid lg:grid-cols-4 grid-cols-1 p-6 gap-4 lg:max-h-[450px] max-h-[700px] overflow-auto">
               {Array.from({ length: 6 }).map((item, i) => (
                 <div
@@ -136,13 +137,19 @@ const PortfolioComponent = () => {
                     </h2>
 
                     <div className="card-actions justify-end">
-                      <button className="btn btn-primary bg-white hover:bg-themered border-none">
+                      <button
+                        className="btn btn-primary bg-white hover:bg-themered border-none"
+                        onClick={() =>
+                          document.getElementById(`modal${i}`).showModal()
+                        }
+                      >
                         More
                       </button>
                     </div>
                   </div>
                 </div>
               ))}
+              <PortfolioDetail />
             </CardContent>
           </Card>
         </TabsContent>
