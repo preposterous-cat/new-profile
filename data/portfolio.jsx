@@ -1,9 +1,9 @@
 const portfolios = [
   {
     title: "Employee Attendance and Overtime Information System",
-    thumbnail: "",
+    thumbnail: "absenonline.png",
     detail: {
-      preview: ["photo1", "photo2", "photo3"],
+      preview: ["absenonline.png", "absenonline2.png", "absenonline3.png"],
       link: "https://github.com/preposterous-cat/absenonline",
       desc: `This website simplifies employee attendance by offering features for clocking in and out. It records
         attendance times and links them to the administrator for monitoring arrival times. Additionally, employees
@@ -14,9 +14,13 @@ const portfolios = [
   },
   {
     title: "Inventory Management Website",
-    thumbnail: "",
+    thumbnail: "webinventaris.png",
     detail: {
-      preview: ["photo1", "photo2", "photo3"],
+      preview: [
+        "webinventaris.png",
+        "webinventaris1.png",
+        "webinventaris2.png",
+      ],
       link: "https://github.com/preposterous-cat/webinventaris",
       desc: `
       This website helps the company keep track of its inventory, 
@@ -28,9 +32,9 @@ const portfolios = [
   },
   {
     title: "CovSegNet (Covid-19 Lung Infections Segmentation)",
-    thumbnail: "",
+    thumbnail: "covsegnet.png",
     detail: {
-      preview: ["photo1", "photo2", "photo3"],
+      preview: ["covsegnet.png", "covsegnet1.png", "covsegne2.png"],
       link: "https://github.com/preposterous-cat/Segnet-tensorflow",
       desc: `
       The research dives into exploring infections in Covid-19 patients using the SegNet method, a Fully
@@ -43,9 +47,9 @@ const portfolios = [
   },
   {
     title: "Profecta Perdana ERP System",
-    thumbnail: "",
+    thumbnail: "erp1.png",
     detail: {
-      preview: ["photo1", "photo2", "photo3"],
+      preview: ["erp1.png", "erp2.png", "erp3.png", "erp4.png"],
       link: "#",
       desc: `
       The ERP app streamlines business processes, offers real-time monitoring, and enables in-depth data analysis
@@ -61,9 +65,9 @@ const portfolios = [
   },
   {
     title: "Content Management System for Company Profile",
-    thumbnail: "",
+    thumbnail: "cms1.png",
     detail: {
-      preview: ["photo1", "photo2", "photo3"],
+      preview: ["cms1.png", "cms2.png", "cms3.png", "cms4.png"],
       link: "https://profectaperdana.com",
       desc: `
       This project utilized NextJS technology to create an interactive and dynamic Company Profile Website. At its

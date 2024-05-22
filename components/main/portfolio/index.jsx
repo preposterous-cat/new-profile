@@ -130,10 +130,10 @@ const PortfolioComponent = () => {
                   >
                     <figure>
                       <Image
-                        src={`/img/thumbnail/${item.thumbnail}`}
+                        src={`/img/preview/${item.thumbnail}`}
                         alt="thumbnail"
-                        width={300}
-                        height={300}
+                        width={400}
+                        height={200}
                       />
                     </figure>
                     <div className="card-body bg-thememaroon rounded-b-xl">
