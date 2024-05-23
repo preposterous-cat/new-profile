@@ -13,13 +13,15 @@ const ContactComponent = () => {
     message: "",
   });
 
+  const [isSending, setIsSending] = useState(false);
+
   const emailInputHandler = (e) => {
     setEmailData({ ...emailData, [e.target.name]: e.target.value });
   };
 
   const sendEmailHandler = async (e) => {
     e.preventDefault();
-    console.log(emailData);
+    setIsSending(true);
     try {
       const response = await fetch("/contact/api", {
         method: "POST",
@@ -49,6 +51,7 @@ const ContactComponent = () => {
     } catch (error) {
       console.error("Error sending email:", error);
     }
+    setIsSending(false);
   };
 
   return (
@@ -97,8 +100,16 @@ const ContactComponent = () => {
           <Button
             type="submit"
             className="bg-themeblue border-2 border-thememaroon hover:bg-thememaroon text-white"
+            disabled={isSending ? "disabled" : ""}
           >
-            Send
+            {isSending ? (
+              <>
+                <span className="loading loading-spinner loading-sm me-2"></span>
+                Sending...
+              </>
+            ) : (
+              "Send"
+            )}
           </Button>
         </div>
       </form>
