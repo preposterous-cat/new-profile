@@ -34,7 +34,7 @@ const portfolios = [
     title: "CovSegNet (Covid-19 Lung Infections Segmentation)",
     thumbnail: "covsegnet.png",
     detail: {
-      preview: ["covsegnet.png", "covsegnet1.png", "covsegne2.png"],
+      preview: ["covsegnet.png", "covsegnet1.png", "covsegnet2.png"],
       link: "https://github.com/preposterous-cat/Segnet-tensorflow",
       desc: `
       The research dives into exploring infections in Covid-19 patients using the SegNet method, a Fully

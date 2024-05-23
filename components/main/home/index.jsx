@@ -44,7 +44,7 @@ const HomeComponent = () => {
           </div>
         </div>
         <div className="flex justify-center lg:mt-0 mt-20">
-          <Image alt="me" src={"/img/me5.png"} width={400} height={400} />{" "}
+          <Image alt="me" src={"/img/me8.png"} width={350} height={300} />{" "}
         </div>
       </div>
     </main>
