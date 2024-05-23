@@ -1,6 +1,6 @@
 export const metadata = {
   title: "About Page",
-  description: "About Page",
+  description: "About | Ariel's Page",
 };
 
 const AboutLayout = ({ children }) => {

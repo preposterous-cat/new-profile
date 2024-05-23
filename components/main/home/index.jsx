@@ -5,8 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 
 const HomeComponent = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-24 px-10">
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
+    <main className="flex min-h-screen flex-col items-center justify-between py-16 md:py-32 lg:py-24 px-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 w-full">
         <div className=" flex justify-start">
           <div className="flex flex-col lg:text-start text-center">
             <h1 className="text-3xl lg:text-5xl text-white">Hello, I am</h1>
@@ -44,7 +44,7 @@ const HomeComponent = () => {
           </div>
         </div>
         <div className="flex justify-center lg:mt-0 mt-20">
-          <Image alt="me" src={"/img/me8.png"} width={350} height={300} />{" "}
+          <Image alt="me" src={"/img/me9.png"} width={350} height={300} />{" "}
         </div>
       </div>
     </main>

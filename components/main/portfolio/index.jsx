@@ -53,7 +53,7 @@ const PortfolioComponent = () => {
         </TabsList>
 
         <TabsContent value="skills" className="w-full">
-          <Card className="bg-themeblue border-s-2 border-b-0 border-t-0 border-e-0 border-thememaroon">
+          <Card className="bg-themeblue border-s-2 border-b-0 border-t-0 border-e-2 border-thememaroon">
             <CardContent className="space-y-2">
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div
@@ -74,7 +74,7 @@ const PortfolioComponent = () => {
                     </Button>
                   </a>
                 </div>
-                <div className="space-y-1 p-6 mt-5 w-full">
+                <div className="space-y-1 lg:p-6 px-16 py-6 mt-5 w-full">
                   <Carousel
                     opts={{
                       align: "start",
@@ -120,8 +120,8 @@ const PortfolioComponent = () => {
         </TabsContent>
 
         <TabsContent value="project">
-          <Card className="border-s-2 border-b-2 border-t-0 border-e-0 border-thememaroon bg-themeblue">
-            <CardContent className=" grid lg:grid-cols-4 grid-cols-1 p-6 gap-4 lg:max-h-[450px] max-h-[700px] overflow-auto">
+          <Card className="border-s-0 border-b-2 border-t-2 border-e-0 border-thememaroon bg-themeblue">
+            <CardContent className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 p-6 gap-4 lg:max-h-[450px] max-h-[700px] overflow-auto">
               {portfolios?.map((item, i) => (
                 <>
                   <div

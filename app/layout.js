@@ -6,8 +6,11 @@ import BottomBar from "@/components/main/layout/bottombar";
 const inter = Days_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Home Page",
+  title: "Home | Ariel's Page",
   description: "Home Page",
+  icons: {
+    icon: "/img/me9.png",
+  },
 };
 
 export default function RootLayout({ children }) {

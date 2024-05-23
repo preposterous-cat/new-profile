@@ -1,8 +1,5 @@
 "use client";
-import {
-  NavigationProvider,
-  useNavigationContext,
-} from "@/context/navigation-context";
+
 import { motion } from "framer-motion";
 
 const RootTemplate = ({ children }) => {

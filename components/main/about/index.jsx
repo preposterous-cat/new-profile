@@ -15,9 +15,9 @@ import { FaAnglesDown, FaArrowDown, FaTurnDown } from "react-icons/fa6";
 
 const AboutComponent = () => {
   return (
-    <div className="lg:grid grid-cols-1 lg:grid-cols-2">
+    <div className="lg:grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div className="flex flex-col justify-self-center lg:justify-self-start">
-        <Tabs defaultValue="who" className=" w-96">
+        <Tabs defaultValue="who" className=" w-96 md:w-full">
           <TabsList className="grid gap-4 grid-cols-4 mb-5 bg-transparent">
             {about_tab_data?.map((item, i) => (
               <TabsTrigger
@@ -48,7 +48,7 @@ const AboutComponent = () => {
       </div>
       <div className="flex flex-col justify-self-center lg:justify-self-start w-full lg:mt-0 mt-10">
         <div className=" text-3xl text-white mb-5">My Universe Timeline</div>
-        <div className="md:max-h-80 max-h-52 overflow-auto">
+        <div className=" md:max-h-96 max-h-52 overflow-auto">
           <ul className=" w-full timeline timeline-snap-icon max-md:timeline-compact timeline-vertical text-white">
             {journey
               ?.sort((a, b) => a - b)
