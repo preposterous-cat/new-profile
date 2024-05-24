@@ -35,7 +35,7 @@ const BottomBar = () => {
             >
               {item.name}
             </label>
-            <Link href={item.link}>
+            <Link href={item.link} onClick={() => navigateHandler(i)}>
               <Button
                 className={`step-counter text-lg rounded-full mx-5 py-6 text-white `}
                 variant="link"
