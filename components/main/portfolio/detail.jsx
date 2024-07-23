@@ -16,7 +16,9 @@ const PortfolioDetail = ({ index, link, preview, desc }) => {
           <div className="mockup-browser border bg-white">
             <div className="mockup-browser-toolbar bg-red-100 rounded-full mx-auto">
               <div className=" bg-transparent">
-                <a href={link}>{link}</a>
+                <a href={link} target="_blank">
+                  {link}
+                </a>
               </div>
             </div>
             <div className="flex justify-center bg-base-200">

@@ -78,6 +78,45 @@ const portfolios = [
         `,
     },
   },
+  {
+    title: "Mobile Tracking App",
+    thumbnail: "tracking1.jpeg",
+    detail: {
+      preview: [
+        "tracking1.jpeg",
+        "tracking2.jpeg",
+        "tracking3.jpeg",
+        "tracking4.jpeg",
+        "tracking5.jpeg",
+      ],
+      link: "https://youtu.be/GN82jgP72u4",
+      desc: `
+      This mobile application, built with Flutter, Laravel for the backend, 
+      Firebase for real-time database services, and Google Maps API, is designed to 
+      streamline remote sales attendance and activity monitoring. It offers key features 
+      such as attendance tracking, the creation of sales visit plans, and real-time location 
+      monitoring of sales staff. The primary goal of this app is to improve efficiency and 
+      oversight in managing sales activities conducted in the field. A demo can be viewed 
+      via the provided YouTube link (above).
+        `,
+    },
+  },
+  {
+    title: "Scraping Tool API",
+    thumbnail: "scraping1.PNG",
+    detail: {
+      preview: ["scraping1.PNG", "scraping2.PNG"],
+      link: "https://github.com/preposterous-cat/scrapingjs-api",
+      desc: `
+      This Scraping Tool application, developed in the ExpressJS environment, 
+      provides an API that allows users to dynamically scrape website information. 
+      You can access the endpoint at https://scrapingjs-api.vercel.app/scrap?url=https://example.com&tag=p&class=text&. 
+      The endpoint supports several parameters including URL (required), class (optional), 
+      tag (optional), and id (optional), enabling more specific and targeted scraping of web content. 
+      This tool is designed to offer flexible and precise web scraping capabilities for various use cases.
+        `,
+    },
+  },
 ];
 
 export default portfolios;
