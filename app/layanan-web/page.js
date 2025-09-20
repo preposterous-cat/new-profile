@@ -83,7 +83,7 @@ export default function LayananWeb() {
                     <p className="mt-1 text-sm text-gray-600">Siap tayang besar & scalable.</p>
                     <div className="mt-4">
                         <div className="text-3xl font-bold mb-2">Rp 20 jt</div>
-                        <div className="text-xs text-gray-500">termasuk <b>Server Khusus</b> (VPS 2vCPU/8GB) + domain 1 tahun</div>
+                        <div className="text-xs text-gray-500">termasuk <b>Server Khusus</b> (VPS 2vCPU/8GB RAM/100GB NVme disk space) + domain 1 tahun</div>
                     </div>
                     <ul className="mt-6 space-y-2 text-sm list-disc">
                         <li className="font-bold text-success">Semua fitur Standard</li>
