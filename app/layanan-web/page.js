@@ -39,7 +39,7 @@ export default function LayananWeb() {
                         <li>Panel kelola konten yang mudah (ubah teks, ganti foto, tambah artikel)</li>
                         <li>Pelatihan 2 jam untuk pengelola</li>
                         <li>Buku Panduan (PDF)</li>
-                        <li>Free maintenance 1 bulan (update keamanan, cek backup, bugfix minor ≤60 menit/bulan)</li>
+                        <li>Free maintenance 1 bulan (update keamanan, cek backup, bugfix minor)</li>
                     </ul>
                     {/* <div className="mt-6 rounded-xl bg-orange-50 border border-orange-200 p-3 text-xs leading-relaxed">
                         <div className="font-medium">Catatan performa & keamanan</div>
@@ -69,7 +69,7 @@ export default function LayananWeb() {
                         <li>Hingga 10 halaman (Galeri, Agenda, Dokumen Publik, dsb.)</li>
                         <li>SEO dasar (metadata, sitemap)</li>
                         <li>Integrasi Google Analytics</li>
-                        <li>Free maintenance 3 bulan (update keamanan, cek backup, bugfix minor ≤60 menit/bulan)</li>
+                        <li>Free maintenance 3 bulan (update keamanan, cek backup, bugfix minor)</li>
                     </ul>
                     <div className="mt-4 text-xs text-gray-500">Estimasi durasi: 14–30 hari kerja.</div>
                 </div>
@@ -90,7 +90,7 @@ export default function LayananWeb() {
                         <li>Desain full kustom (bukan template)</li>
                         <li>Halaman unlimited</li>
                         <li>Optimasi kecepatan (caching, CDN)</li>
-                        <li>Free maintenance 3 bulan (update keamanan, cek backup, bugfix minor ≤60 menit/bulan)</li>
+                        <li>Free maintenance 6 bulan (update keamanan, cek backup, bugfix minor)</li>
                     </ul>
                     <div className="mt-4 text-xs text-gray-500">Estimasi durasi: 1–3 bulan (tergantung kompleksitas).</div>
                 </div>
