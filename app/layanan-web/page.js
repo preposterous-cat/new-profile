@@ -67,8 +67,9 @@ export default function LayananWeb() {
                         <li>Hosting (±30–50 GB SSD, backup mingguan, domain gratis, beberapa email)</li>
                         <li>Desain semi‑kustom (layout disesuaikan instansi)</li>
                         <li>Hingga 10 halaman (Galeri, Agenda, Dokumen Publik, dsb.)</li>
-                        <li>SEO dasar (metadata, sitemap)</li>
-                        <li>Integrasi Google Analytics</li>
+                        <li>SEO dasar (metadata, sitemap) & Integrasi Google Analytics</li>
+                        <li>Migrasi & input konten awal hingga 10 halaman/artikel</li>
+                        <li>Laporan kunjungan bulanan (ringkas) 3 bulan pertama</li>
                         <li>Free maintenance 3 bulan (update keamanan, cek backup, bugfix minor)</li>
                     </ul>
                     <div className="mt-4 text-xs text-gray-500">Estimasi durasi: 14–30 hari kerja.</div>
@@ -89,7 +90,10 @@ export default function LayananWeb() {
                         <li className="font-bold text-success">Semua fitur Standard</li>
                         <li>Desain full kustom (bukan template)</li>
                         <li>Halaman unlimited</li>
-                        <li>Optimasi kecepatan (caching, CDN)</li>
+                        <li>Migrasi & input konten awal hingga 30 halaman / 50 dokumen</li>
+                        <li>Optimasi kecepatan lanjutan (caching, CDN, minifikasi)</li>
+                        <li>Keamanan tambahan (pembatasan login, proteksi serangan umum)</li>
+                        <li>Laporan performa & kunjungan bulanan 6 bulan + support prioritas</li>
                         <li>Free maintenance 6 bulan (update keamanan, cek backup, bugfix minor)</li>
                     </ul>
                     <div className="mt-4 text-xs text-gray-500">Estimasi durasi: 1–3 bulan (tergantung kompleksitas).</div>
